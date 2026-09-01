@@ -2,6 +2,7 @@ package Jobsheet2;
 
 public class BookDemo {
     public static void main(String[] args) {
+        //Assignment 2
         Book book1 = new Book();
         book1.title = "Java Programming";
         book1.color = "Blue";

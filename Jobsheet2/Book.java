@@ -1,6 +1,7 @@
 package Jobsheet2;
 
 public class Book {
+    //Assignment 2
     public String title;
     public String color;
     public String paperSize;
