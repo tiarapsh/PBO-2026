@@ -35,13 +35,9 @@ public class Member {
         this.borrowingLimit = borrowingLimit;
     }
 
-    public int getLoanAmount() {
+    public int getLoanAmount() { //check the current loan amount
         return loanAmount;
     }
-    public void borrow(int amount){
-        loan(amount);
-    }
-
     public void loan(int amount){
         if( this.loanAmount + amount <= this.borrowingLimit){
             this.loanAmount += amount;
@@ -49,9 +45,14 @@ public class Member {
             System.out.println("Sorry, the loan amount exceeds the limit.");
         }
     }
+    
+    public void borrow(int amount){
+        loan(amount);
+    }
+
 
     //Task number 2
-    public void installment(int amount){
+    public void payInstallment(int amount){
         double minimumInstallment = 0.10 * loanAmount;
         
         if (amount < minimumInstallment){
@@ -63,8 +64,8 @@ public class Member {
         }
     }
 
-    public void Installment(int amount){
-        installment(amount);
+    public void installment(int amount){
+        payInstallment(amount);
     }
 
 
