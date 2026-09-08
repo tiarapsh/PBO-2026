@@ -3,8 +3,6 @@ public class Motor {
     public String licensePlate;
     public boolean isEngineOn;
     public int speed;
-
-
     public void displayStatus(){
         System.out.println("License Plate: " + this.licensePlate);
 

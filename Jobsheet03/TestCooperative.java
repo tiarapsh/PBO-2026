@@ -16,11 +16,11 @@ public class TestCooperative {
 
         //Task number 2, modify the installment method to check if the installment is less than 10% of the loan amount
         System.out.println("\nPaying 20,000 installments");
-        member1.payInstallment(20000);
+        member1.installment(20000);
         System.out.println("Remaining Loan Amount:" + member1.getLoanAmount());
 
         System.out.println("\nPaying 3,000,000 installments");
-        member1.payInstallment(3000000);
+        member1.installment(3000000);
         System.out.println("Remaining Loan Amount:" + member1.getLoanAmount());
 
     }

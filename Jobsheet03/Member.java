@@ -9,8 +9,8 @@ public class Member {
         this.idNumber = idNumber;
         this.name = name;
         this.borrowingLimit = borrowingLimit;
-        this.loanAmount = 0; 
     }
+
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
@@ -18,14 +18,12 @@ public class Member {
         return idNumber;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
-        return name;
     }
     public String getName() {
         return name;
     }
-
     
     public int getLimitLoan() {
         return borrowingLimit;
@@ -38,23 +36,21 @@ public class Member {
     public int getLoanAmount() { //check the current loan amount
         return loanAmount;
     }
-    public void loan(int amount){
+
+    public void borrow(int amount){ //jika sisa pinjaman + pinjaman baru tidak melibihi limit, maka saldo akan bertambah. Jika sebaliknya, akan memunculkan pesan
         if( this.loanAmount + amount <= this.borrowingLimit){
             this.loanAmount += amount;
         } else {
             System.out.println("Sorry, the loan amount exceeds the limit.");
         }
     }
-    
-    public void borrow(int amount){
-        loan(amount);
-    }
 
 
     //Task number 2
-    public void payInstallment(int amount){
+    public void installment(int amount){
         double minimumInstallment = 0.10 * loanAmount;
         
+        //sesuai dengan standar yaitu angsuran minimal 10% dari sisa pinjama, jika angsuran kurang dari 10% maka akan memunculkan pesan
         if (amount < minimumInstallment){
             System.out.println("Sorry, the installment must be 10% of the loan amount.");
         } else if (amount > loanAmount){
@@ -62,10 +58,6 @@ public class Member {
         } else {
             this.loanAmount -= amount;
         }
-    }
-
-    public void installment(int amount){
-        payInstallment(amount);
     }
 
 
