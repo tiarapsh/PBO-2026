@@ -1,30 +1,31 @@
 package Jobsheet4.Task;
 
 public class Employee {
-    private String nip;
-    private String nama;
+    private String employeeId;
+    private String name;
 
-    public Employee(String nip, String nama) {
-        this.nip = nip;
-        this.nama = nama;
+    public Employee(String employeeId, String name) {
+        this.employeeId = employeeId;
+        this.name = name;
     }
 
-    public String getNip() { 
-        return nip; 
-    }
-    public void setNip(String nip) {
-         this.nip = nip; 
+    public String getEmployeeId() { 
+        return employeeId; 
     }
 
-    public String getNama() { 
-        return nama; 
+    public void setEmployeeId(String nip) {
+         this.employeeId = nip; 
+    }
+
+    public String getName() { 
+        return name; 
     }
     
-    public void setNama(String nama) { 
-        this.nama = nama; 
+    public void setName(String name) { 
+        this.name = name; 
     }
 
     public String getInfo() {
-        return nama + " (NIP: " + nip + ")";
+        return name + " (Employee ID: " + employeeId + ")";
     }
 }
