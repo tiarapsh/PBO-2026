@@ -67,7 +67,7 @@ public class LaundryOrder {
         info += "\tDate: " + date;
         info += ", Service: " + serviceType;
         info += ", Weight: " + weight + " kg";
-        info += ", Total: $" + calculateTotalCost();
+        info += ", Total: Rp." + calculateTotalCost();
         info += ", Cashier: " + cashier.getInfo();
         info += ", Operator: " + operator.getInfo();
         info += "\n";

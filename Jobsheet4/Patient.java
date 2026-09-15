@@ -8,7 +8,7 @@ public class Patient {
     private String name;
     private ArrayList<Consultation> consultationsHistory;
 
-    public String nomedicalRecord() {
+    public String noMedicalRecord() {
         return noMedicalRecord;
     }
 

@@ -31,6 +31,7 @@ public class Customer {
     }
 
     public void addOrder(LocalDate date, String serviceType, double weight, double ratePerKg, Employee cashier, Employee operator) {
+        //Objek LaundryOrder dibuat langsung di dalam class Customer
         LaundryOrder order = new LaundryOrder();
         order.setDate(date);
         order.setServiceType(serviceType);

@@ -4,7 +4,7 @@ public class Employee {
     private String nip;
     private String name;
     
-      public Employee(String nip, String name) {
+    public Employee(String nip, String name) {
         this.nip = nip;
         this.name = name;
     }
@@ -12,6 +12,7 @@ public class Employee {
     public String getNip() {
         return nip;
     }
+    
     public void setNip(String nip) {
         this.nip = nip;
     }
