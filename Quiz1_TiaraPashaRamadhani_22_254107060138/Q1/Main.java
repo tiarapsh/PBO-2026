@@ -11,7 +11,6 @@ public class Main {
         System.out.println("Customer Name: " + customer1.getCustomerName());
 
         System.out.println("\n=== Stock and Product===");
-        // Membuat Stok
         Stock stockLaptop = new Stock(15, 1);
         stockLaptop.setStockId("STK-101");
         stockLaptop.addStock();
