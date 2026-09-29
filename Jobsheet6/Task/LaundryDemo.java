@@ -11,13 +11,12 @@ public class LaundryDemo {
         System.out.println("--- OPERATOR INFO ---");
         System.out.println(operator1.getOperatorInfo());
 
-        //modified data
-        cashier1.name = "Siti Rahma, A.Md.";
+        cashier1.addTransaction(); 
+        operator1.addWeight(10.5f);
+
         cashier1.salary = 3800000;
-        cashier1.dailyTransaction = 40;
 
         operator1.salary = 3500000;
-        operator1.laundryWeight = 60.0f;
 
         System.out.println("--- MODIFIED CASHIER INFO ---");
         System.out.println(cashier1.getCashierInfo());

@@ -18,6 +18,11 @@ public class EmployeeLaundry {
         this.salary = salary;
     }
 
+    //override
+    public void addTransaction() {
+        System.out.println("Processing general transaction...");
+    }
+
     public String getEmployeeInfo() {
         String info = "";
         info += "ID Employee  : " + idEmployee + "\n";

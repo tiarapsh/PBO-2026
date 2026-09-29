@@ -13,6 +13,10 @@ public class Operator extends EmployeeLaundry {
         this.laundryWeight = laundryWeight;
     }
 
+    public void addWeight(float weight) {
+        this.laundryWeight += weight;
+    }
+
     public String getOperatorInfo() {
         String info = super.getEmployeeInfo();
         info += "Laundry      : " + laundryWeight + " kg\n";

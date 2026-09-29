@@ -13,6 +13,11 @@ public class Cashier extends EmployeeLaundry {
         this.dailyTransaction = dailyTransaction;
     }
 
+    @Override
+    public void addTransaction() {
+        this.dailyTransaction++; 
+    }
+
     public String getCashierInfo() {
         String info = super.getEmployeeInfo();
         info += "Daily Trans. : " + dailyTransaction + " transactions\n";
